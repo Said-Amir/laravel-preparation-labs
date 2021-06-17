@@ -17,7 +17,7 @@
 <div id="hero" class="py-5" style="height: unset;">
     <h1>About Section</h1>
 </div>
-<section id="about" class="about mx-auto" style="width: 90%;">
+<section id="about" class="about mx-auto px-4" style="width: 96%;">
     <div class="container">
         @if (session('message'))
             <div class="container p-0">

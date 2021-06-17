@@ -3,7 +3,10 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutFactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TitreController;
+use App\Models\About;
 use App\Models\Home;
+use App\Models\Titre;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,8 +21,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $about = About::first();
     $home = Home::first();
-    return view('home', compact('home'));
+    $titres = Titre::all();
+    return view('home', compact('home', 'about', 'titres'));
 });
 
 Route::get('/dashboard', function () {
@@ -29,3 +34,4 @@ Route::get('/dashboard', function () {
 Route::resource('/home', HomeController::class);
 Route::resource('/about', AboutController::class);
 Route::resource('/aboutFact', AboutFactController::class);
+Route::resource('/titre', TitreController::class);
