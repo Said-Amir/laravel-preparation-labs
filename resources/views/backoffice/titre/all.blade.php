@@ -10,7 +10,7 @@
             </div>
         </div>
         @endif
-        <div class="navbar">
+        <div class="navbar mt-5">
             @foreach ($titres as $titre)
                 <div class="section-title">
                     <h2>{{ $titre->id }}. {{ $titre->title }}</h2>

@@ -46,6 +46,8 @@
             <a style="display: inline-block!important;" href={{ route('home.index') }} class=" w-100 nav-link">Home</a>
             <a style="display: inline-block!important;" href={{ route('about.index') }} class=" w-100 nav-link pb-2">About</a>
             <a style="display: inline-block!important;" href={{ route('titre.index') }} class=" w-100 nav-link pb-2">Titres</a>
+            <a style="display: inline-block!important;" href={{ route('feature.index') }} class=" w-100 nav-link pb-2">Features</a>
+            <a style="display: inline-block!important;" href={{ route('service.index') }} class=" w-100 nav-link pb-2">Services</a>
             <a style="display: inline-block!important;" class="getstarted mt-2 py-1 px-2 scrollto" href="/">Logout</a>
         </div>
     </div>

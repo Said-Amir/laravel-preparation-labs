@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutFactController;
+use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TitreController;
 use App\Models\About;
 use App\Models\Home;
@@ -35,3 +37,5 @@ Route::resource('/home', HomeController::class);
 Route::resource('/about', AboutController::class);
 Route::resource('/aboutFact', AboutFactController::class);
 Route::resource('/titre', TitreController::class);
+Route::resource('/feature', FeatureController::class);
+Route::resource('/service', ServiceController::class);

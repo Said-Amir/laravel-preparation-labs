@@ -15,7 +15,7 @@ class ServiceSeeder extends Seeder
     public function run()
     {
         DB::table("services")->insert([
-            "icon"=>"bx-dribbble",
+            "icon"=>"bxl-dribbble",
             "title"=>"Lorem Ipsum",
             "description"=>"Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi",
             "created_at"=>now()

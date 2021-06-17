@@ -2,7 +2,7 @@
 
 @section('content')
     <section id="hero" class="d-flex align-items-center" style="height: unset!important;">
-        <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
+        <div class="container p-0 d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
             @if (session('message'))
                 <div class="container p-0">
                     <div  class="alert alert-success">

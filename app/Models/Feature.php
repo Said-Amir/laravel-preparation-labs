@@ -12,7 +12,12 @@ class Feature extends Model
     protected $table = 'features';
 
     protected $fillable = [
+        "image",
         "title",
-        "description"
+        "description",
+        "text",
+        "fact1",
+        "fact2",
+        "fact3"
     ];
 }
